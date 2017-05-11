@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    background: #ECEFF1;
+}
+
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+
+.main-sheet {
+    margin: 64px;
+    width: 100%;
+    max-width: 900px;
+
+    background: white;
+    box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.top-bar {
+    height: calc(16px * 8);
+    background: #546E7A;
+    display: flex;
+}
+
+.top-bar > img {
+    width: calc(16px * 8 - 32px);
+    height: calc(16px * 8 - 32px);
+    margin: 16px;
+
+    object-fit: cover;
+
+    border: white 2px solid;
+    border-radius: 50%;
+
+    display: inline-block;;
+}
+
+.top-bar > .whoami {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%;
+    padding-bottom: 8px;
+}
+
+.whoami .name {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.whoami .nick {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-left: -4px;
+    margin-top: -8px;
+}
+
+.whoami .nick > * {
+    margin-left: 8px;
+}
+
+.whoami .nick:first-child {
+    margin-left: 0px;
+}
+
+
+
+
+.section {
+    color: black;
+    margin: 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.section .title {
+    font-size: 20px;
+    color: #616161;
+
+    display: flex;
+    align-items: center;
+}
+
+.title .material-icons {
+    margin: 16px;
+}
+
+.profile {
+
+}
