@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  myself:
+    build:
+      dockerfile: Dockerfile.dev
+    ports:
+      - target: 1234
+        published: 1234
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app/myself/src
