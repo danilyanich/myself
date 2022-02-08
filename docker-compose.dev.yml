@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  myself-dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    ports:
+      - target: 8080
+        published: 8080
+    volumes:
+      - type: bind
+        source: ./src
+        target: /opt/myself/src
